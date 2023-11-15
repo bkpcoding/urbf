@@ -18,7 +18,7 @@ Requirements:
 Create the conda environment,
 
 ```bash
-conda create --new urbf python==3.8
+conda create -n "urbf" python==3.8
 conda activate urbf
 ```
 
