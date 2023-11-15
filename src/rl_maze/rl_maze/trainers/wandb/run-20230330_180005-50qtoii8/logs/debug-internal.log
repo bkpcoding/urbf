@@ -1,0 +1,142 @@
+2023-03-30 18:00:05,501 INFO    StreamThr :37046 [internal.py:wandb_internal():87] W&B internal server running at pid: 37046, started at: 2023-03-30 18:00:05.500643
+2023-03-30 18:00:05,503 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: status
+2023-03-30 18:00:05,507 INFO    WriterThread:37046 [datastore.py:open_for_write():85] open: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/run-50qtoii8.wandb
+2023-03-30 18:00:05,508 DEBUG   SenderThread:37046 [sender.py:send():336] send: header
+2023-03-30 18:00:05,527 DEBUG   SenderThread:37046 [sender.py:send():336] send: run
+2023-03-30 18:00:06,223 INFO    SenderThread:37046 [dir_watcher.py:__init__():219] watching files in: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files
+2023-03-30 18:00:06,223 INFO    SenderThread:37046 [sender.py:_start_run_threads():1078] run started: 50qtoii8 with start time 1680192005.499177
+2023-03-30 18:00:06,223 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 18:00:06,223 INFO    SenderThread:37046 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 18:00:06,224 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: check_version
+2023-03-30 18:00:06,224 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: check_version
+2023-03-30 18:00:06,475 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: run_start
+2023-03-30 18:00:06,477 DEBUG   HandlerThread:37046 [system_info.py:__init__():31] System info init
+2023-03-30 18:00:06,477 DEBUG   HandlerThread:37046 [system_info.py:__init__():46] System info init done
+2023-03-30 18:00:06,477 INFO    HandlerThread:37046 [system_monitor.py:start():183] Starting system monitor
+2023-03-30 18:00:06,477 INFO    SystemMonitor:37046 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-30 18:00:06,477 INFO    HandlerThread:37046 [system_monitor.py:probe():204] Collecting system info
+2023-03-30 18:00:06,478 INFO    SystemMonitor:37046 [interfaces.py:start():187] Started cpu monitoring
+2023-03-30 18:00:06,479 INFO    SystemMonitor:37046 [interfaces.py:start():187] Started disk monitoring
+2023-03-30 18:00:06,480 INFO    SystemMonitor:37046 [interfaces.py:start():187] Started memory monitoring
+2023-03-30 18:00:06,481 INFO    SystemMonitor:37046 [interfaces.py:start():187] Started network monitoring
+2023-03-30 18:00:06,487 DEBUG   HandlerThread:37046 [system_info.py:probe():195] Probing system
+2023-03-30 18:00:06,497 DEBUG   HandlerThread:37046 [system_info.py:_probe_git():180] Probing git
+2023-03-30 18:00:06,518 DEBUG   HandlerThread:37046 [system_info.py:_probe_git():188] Probing git done
+2023-03-30 18:00:06,518 DEBUG   HandlerThread:37046 [system_info.py:probe():240] Probing system done
+2023-03-30 18:00:06,518 DEBUG   HandlerThread:37046 [system_monitor.py:probe():213] {'os': 'Linux-6.0.6-76060006-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2023-03-30T16:00:06.488061', 'startedAt': '2023-03-30T16:00:05.484119', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'random_trainer2.py', 'codePath': 'rl_maze/trainers/random_trainer2.py', 'git': {'remote': 'https://github.com/bkpcoding/rl_maze.git', 'commit': '48dcb55bdf9b7738e492a3f7b1bee45a63bdbc5c'}, 'email': 'sagarbasava8@gmail.com', 'root': '/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze', 'host': 'pop-os', 'username': 'sagar', 'executable': '/home/sagar/anaconda3/envs/rbf/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2237.8207500000003, 'min': 400.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2199.99, 'min': 400.0, 'max': 3900.0}, {'current': 2200.108, 'min': 400.0, 'max': 3900.0}, {'current': 2199.978, 'min': 400.0, 'max': 3900.0}, {'current': 2200.004, 'min': 400.0, 'max': 3900.0}, {'current': 2200.007, 'min': 400.0, 'max': 3900.0}, {'current': 2200.063, 'min': 400.0, 'max': 3900.0}, {'current': 2202.66, 'min': 400.0, 'max': 3900.0}, {'current': 2200.0, 'min': 400.0, 'max': 3900.0}], 'disk': {'total': 219.79708099365234, 'used': 72.08026885986328}, 'memory': {'total': 7.483684539794922}}
+2023-03-30 18:00:06,519 INFO    HandlerThread:37046 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-30 18:00:06,519 INFO    HandlerThread:37046 [system_monitor.py:probe():217] Publishing system info
+2023-03-30 18:00:06,519 DEBUG   HandlerThread:37046 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-30 18:00:06,519 DEBUG   HandlerThread:37046 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-30 18:00:06,519 DEBUG   HandlerThread:37046 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-30 18:00:07,225 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_created():278] file/dir created: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/conda-environment.yaml
+2023-03-30 18:00:07,225 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_created():278] file/dir created: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/requirements.txt
+2023-03-30 18:00:07,225 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_created():278] file/dir created: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-summary.json
+2023-03-30 18:00:12,491 DEBUG   HandlerThread:37046 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-30 18:00:12,492 INFO    HandlerThread:37046 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-30 18:00:12,511 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:00:12,512 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:00:12,513 DEBUG   SenderThread:37046 [sender.py:send():336] send: files
+2023-03-30 18:00:12,513 INFO    SenderThread:37046 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-30 18:00:12,522 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 18:00:12,523 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 18:00:13,228 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_modified():295] file/dir modified: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/conda-environment.yaml
+2023-03-30 18:00:13,229 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_created():278] file/dir created: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-metadata.json
+2023-03-30 18:00:13,574 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 18:00:18,464 DEBUG   SenderThread:37046 [sender.py:send():336] send: telemetry
+2023-03-30 18:00:18,464 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:00:18,469 DEBUG   SenderThread:37046 [sender.py:send():336] send: exit
+2023-03-30 18:00:18,469 INFO    SenderThread:37046 [sender.py:send_exit():559] handling exit code: 1
+2023-03-30 18:00:18,470 INFO    SenderThread:37046 [sender.py:send_exit():561] handling runtime: 6
+2023-03-30 18:00:18,479 INFO    SenderThread:37046 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 18:00:18,479 INFO    SenderThread:37046 [sender.py:send_exit():567] send defer
+2023-03-30 18:00:18,480 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: poll_exit
+2023-03-30 18:00:18,480 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,481 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-30 18:00:18,481 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,481 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-30 18:00:18,481 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 1
+2023-03-30 18:00:18,481 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,481 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-30 18:00:18,482 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,482 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-30 18:00:18,482 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 2
+2023-03-30 18:00:18,482 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,482 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-30 18:00:18,482 INFO    HandlerThread:37046 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-30 18:00:18,483 DEBUG   SystemMonitor:37046 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-30 18:00:18,483 DEBUG   SystemMonitor:37046 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-30 18:00:18,484 DEBUG   SystemMonitor:37046 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-30 18:00:18,484 INFO    HandlerThread:37046 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-30 18:00:18,485 INFO    HandlerThread:37046 [interfaces.py:finish():199] Joined disk monitor
+2023-03-30 18:00:18,485 INFO    HandlerThread:37046 [interfaces.py:finish():199] Joined memory monitor
+2023-03-30 18:00:18,485 INFO    HandlerThread:37046 [interfaces.py:finish():199] Joined network monitor
+2023-03-30 18:00:18,486 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,486 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-30 18:00:18,486 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 3
+2023-03-30 18:00:18,486 DEBUG   SenderThread:37046 [sender.py:send():336] send: stats
+2023-03-30 18:00:18,486 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,486 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-30 18:00:18,487 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,487 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-30 18:00:18,487 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 4
+2023-03-30 18:00:18,487 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,487 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-30 18:00:18,488 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,488 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-30 18:00:18,488 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 5
+2023-03-30 18:00:18,488 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,488 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-30 18:00:18,489 DEBUG   SenderThread:37046 [sender.py:send():336] send: summary
+2023-03-30 18:00:18,489 INFO    SenderThread:37046 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 18:00:18,490 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,490 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-30 18:00:18,490 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 6
+2023-03-30 18:00:18,490 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,490 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-30 18:00:18,490 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,491 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-30 18:00:18,496 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:00:18,578 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:00:18,754 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 7
+2023-03-30 18:00:18,754 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:18,754 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-30 18:00:18,755 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:18,755 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-30 18:00:18,988 INFO    wandb-upload_0:37046 [upload_job.py:push():138] Uploaded file /tmp/tmpk4a87005wandb/cc3oheny-wandb-metadata.json
+2023-03-30 18:00:19,231 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_modified():295] file/dir modified: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/config.yaml
+2023-03-30 18:00:19,232 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_modified():295] file/dir modified: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-summary.json
+2023-03-30 18:00:19,232 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_created():278] file/dir created: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/output.log
+2023-03-30 18:00:20,502 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 8
+2023-03-30 18:00:20,502 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:20,502 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-30 18:00:20,502 DEBUG   SenderThread:37046 [sender.py:send_request():363] send_request: defer
+2023-03-30 18:00:20,503 INFO    SenderThread:37046 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-30 18:00:20,517 INFO    SenderThread:37046 [sender.py:transition_state():587] send defer: 9
+2023-03-30 18:00:20,517 DEBUG   HandlerThread:37046 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 18:00:20,517 INFO    HandlerThread:37046 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-30 18:00:20,517 DEBUG   SenderThread:37046 [sender.py:send():336] send: artifact
+2023-03-30 18:00:21,233 INFO    Thread-13 :37046 [dir_watcher.py:_on_file_modified():295] file/dir modified: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/output.log
+2023-03-30 18:00:22,548 WARNING StreamThr :37046 [internal.py:is_dead():415] Internal process exiting, parent pid 37032 disappeared
+2023-03-30 18:00:22,548 ERROR   StreamThr :37046 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-30 18:00:23,518 INFO    HandlerThread:37046 [handler.py:finish():842] shutting down handler
+2023-03-30 18:00:23,518 INFO    WriterThread:37046 [datastore.py:close():298] close: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/run-50qtoii8.wandb
+2023-03-30 18:00:32,592 INFO    wandb-upload_0:37046 [upload_job.py:push():96] Uploaded file /home/sagar/.local/share/wandb/artifacts/staging/tmp5cdq76b9
+2023-03-30 18:00:33,815 INFO    wandb-upload_1:37046 [upload_job.py:push():96] Uploaded file /home/sagar/.local/share/wandb/artifacts/staging/tmpn4ophasx
+2023-03-30 18:00:40,382 INFO    SenderThread:37046 [sender.py:send_artifact():1428] sent artifact job-https___github.com_bkpcoding_rl_maze.git_rl_maze_trainers_random_trainer2.py - {'id': 'QXJ0aWZhY3Q6NDEwMTcxMjk4', 'digest': '1c9f919bcfc1b7c71db8b0dab35a4217', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5NTY5OTQ0', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-30 18:00:40,387 INFO    SenderThread:37046 [sender.py:finish():1504] shutting down sender
+2023-03-30 18:00:40,387 INFO    SenderThread:37046 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-30 18:00:41,237 INFO    SenderThread:37046 [dir_watcher.py:finish():395] scan: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files
+2023-03-30 18:00:41,237 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-summary.json wandb-summary.json
+2023-03-30 18:00:41,238 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/output.log output.log
+2023-03-30 18:00:41,238 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-metadata.json wandb-metadata.json
+2023-03-30 18:00:41,238 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/config.yaml config.yaml
+2023-03-30 18:00:41,240 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/requirements.txt requirements.txt
+2023-03-30 18:00:41,241 INFO    SenderThread:37046 [dir_watcher.py:finish():409] scan save: /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/conda-environment.yaml conda-environment.yaml
+2023-03-30 18:00:41,241 INFO    SenderThread:37046 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 18:00:41,241 INFO    SenderThread:37046 [file_pusher.py:join():169] waiting for file pusher
+2023-03-30 18:00:41,911 INFO    wandb-upload_1:37046 [upload_job.py:push():138] Uploaded file /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/config.yaml
+2023-03-30 18:00:42,055 INFO    wandb-upload_3:37046 [upload_job.py:push():138] Uploaded file /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/requirements.txt
+2023-03-30 18:00:42,059 INFO    wandb-upload_0:37046 [upload_job.py:push():138] Uploaded file /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/wandb-summary.json
+2023-03-30 18:00:42,067 INFO    wandb-upload_2:37046 [upload_job.py:push():138] Uploaded file /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/output.log
+2023-03-30 18:00:42,330 INFO    wandb-upload_4:37046 [upload_job.py:push():138] Uploaded file /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_180005-50qtoii8/files/conda-environment.yaml

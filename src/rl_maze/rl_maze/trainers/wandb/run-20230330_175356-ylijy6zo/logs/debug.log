@@ -1,0 +1,37 @@
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Configure stats pid to 36301
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Loading settings from /home/sagar/.config/wandb/settings
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Loading settings from /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/settings
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'rl_maze/trainers/random_trainer2.py', 'program': 'random_trainer2.py'}
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_init.py:_log_setup():506] Logging user logs to /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_175356-ylijy6zo/logs/debug.log
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_init.py:_log_setup():507] Logging internal logs to /media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze/rl_maze/trainers/wandb/run-20230330_175356-ylijy6zo/logs/debug-internal.log
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_init.py:init():546] calling init triggers
+2023-03-30 17:53:56,566 INFO    MainThread:36301 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {}
+2023-03-30 17:53:56,567 INFO    MainThread:36301 [wandb_init.py:init():602] starting backend
+2023-03-30 17:53:56,567 INFO    MainThread:36301 [wandb_init.py:init():606] setting up manager
+2023-03-30 17:53:56,581 INFO    MainThread:36301 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-30 17:53:56,584 INFO    MainThread:36301 [wandb_init.py:init():613] backend started and connected
+2023-03-30 17:53:56,589 INFO    MainThread:36301 [wandb_init.py:init():701] updated telemetry
+2023-03-30 17:53:56,617 INFO    MainThread:36301 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-30 17:53:57,834 INFO    MainThread:36301 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-30 17:53:58,017 INFO    MainThread:36301 [wandb_run.py:_on_init():2142] got version response 
+2023-03-30 17:53:58,018 INFO    MainThread:36301 [wandb_init.py:init():789] starting run threads in backend
+2023-03-30 17:54:01,857 WARNING MainThread:36301 [wandb_init.py:init():1165] interrupted
+Traceback (most recent call last):
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1144, in init
+    run = wi.init()
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 801, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

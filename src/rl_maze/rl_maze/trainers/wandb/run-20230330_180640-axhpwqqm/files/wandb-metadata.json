@@ -1,0 +1,77 @@
+{
+    "os": "Linux-6.0.6-76060006-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-03-30T16:06:47.201140",
+    "startedAt": "2023-03-30T16:06:40.792272",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "random_trainer2.py",
+    "codePath": "rl_maze/trainers/random_trainer2.py",
+    "git": {
+        "remote": "https://github.com/bkpcoding/rl_maze.git",
+        "commit": "48dcb55bdf9b7738e492a3f7b1bee45a63bdbc5c"
+    },
+    "email": "sagarbasava8@gmail.com",
+    "root": "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/rl_maze",
+    "host": "pop-os",
+    "username": "sagar",
+    "executable": "/home/sagar/anaconda3/envs/rbf/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1559.352125,
+        "min": 400.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2022.388,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2065.164,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2287.609,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2014.537,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2249.897,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2380.28,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2202.339,
+            "min": 400.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2015.637,
+            "min": 400.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 219.79708099365234,
+        "used": 72.08247375488281
+    },
+    "memory": {
+        "total": 7.483684539794922
+    }
+}

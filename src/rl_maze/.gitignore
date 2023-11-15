@@ -1,0 +1,8 @@
+# Specify filepatterns you want git to ignore.
+*.npy
+*.mp4
+*.png
+*.gif
+./rl_maze/data
+
+

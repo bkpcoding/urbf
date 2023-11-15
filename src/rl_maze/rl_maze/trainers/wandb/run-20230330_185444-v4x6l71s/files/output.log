@@ -1,0 +1,248 @@
+8
+1 1 1 1 1 1 1 1 1
+1 0 0 0 0 0 0 2 1
+1 0 0 0 0 0 0 0 1
+1 0 0 0 2 0 0 2 1
+1 0 0 2 0 2 0 0 1
+1 0 2 0 0 0 0 0 1
+1 0 0 0 0 2 0 0 1
+1 0 0 0 0 0 0 3 1
+1 1 1 1 1 1 1 1 1
+[[ 0  0  0  0  0  0  0  0  0]
+ [ 0  2  1  2  3  4  5  0  0]
+ [ 0  1  2  3  4  5  6  7  0]
+ [ 0  2  3  4  0  6  7  0  0]
+ [ 0  3  4  0 10  0  8  9  0]
+ [ 0  4  0  8  9 10  9 10  0]
+ [ 0  5  6  7  8  0 10 11  0]
+ [ 0  6  7  8  9 10 11 12  0]
+ [ 0  0  0  0  0  0  0  0  0]]
+Maze created after 0 tries with 4900 seed
+Goal: [7 7]
+Cliff: [[1 7]
+ [3 4]
+ [3 7]
+ [4 3]
+ [4 5]
+ [5 2]
+ [6 5]]
+Start: [1 1]
+Maze: [[1 1 1 1 1 1 1 1 1]
+ [1 0 0 0 0 0 0 2 1]
+ [1 0 0 0 0 0 0 0 1]
+ [1 0 0 0 2 0 0 2 1]
+ [1 0 0 2 0 2 0 0 1]
+ [1 0 2 0 0 0 0 0 1]
+ [1 0 0 0 0 2 0 0 1]
+ [1 0 0 0 0 0 0 3 1]
+ [1 1 1 1 1 1 1 1 1]]
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+DQNPolicy(
+  (q_net): QNetwork(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (q_net): Sequential(
+      (0): MRBF()
+      (1): Linear(in_features=128, out_features=32, bias=True)
+      (2): ReLU()
+      (3): Linear(in_features=32, out_features=128, bias=True)
+      (4): ReLU()
+      (5): Linear(in_features=128, out_features=4, bias=True)
+    )
+  )
+  (q_net_target): QNetwork(
+    (features_extractor): FlattenExtractor(
+      (flatten): Flatten(start_dim=1, end_dim=-1)
+    )
+    (q_net): Sequential(
+      (0): MRBF()
+      (1): Linear(in_features=128, out_features=32, bias=True)
+      (2): ReLU()
+      (3): Linear(in_features=32, out_features=128, bias=True)
+      (4): ReLU()
+      (5): Linear(in_features=128, out_features=4, bias=True)
+    )
+  )
+)
+Logging to ./tensorboard/DQN_2
+reward_per_timestep -2.8
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 34       |
+|    ep_rew_mean      | -96.6    |
+|    exploration_rate | 0.837    |
+| time/               |          |
+|    episodes         | 29       |
+|    fps              | 11217    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 1000     |
+----------------------------------
+reward_per_timestep -3.1
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 32.2     |
+|    ep_rew_mean      | -95.2    |
+|    exploration_rate | 0.673    |
+| time/               |          |
+|    episodes         | 62       |
+|    fps              | 11844    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 2000     |
+----------------------------------
+reward_per_timestep -2.2
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 35.2     |
+|    ep_rew_mean      | -95.3    |
+|    exploration_rate | 0.51     |
+| time/               |          |
+|    episodes         | 85       |
+|    fps              | 12127    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 3000     |
+----------------------------------
+reward_per_timestep -2.6
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 35.7     |
+|    ep_rew_mean      | -95      |
+|    exploration_rate | 0.347    |
+| time/               |          |
+|    episodes         | 113      |
+|    fps              | 12214    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 4000     |
+----------------------------------
+reward_per_timestep -2.9
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 33.9     |
+|    ep_rew_mean      | -95      |
+|    exploration_rate | 0.183    |
+| time/               |          |
+|    episodes         | 142      |
+|    fps              | 12092    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 5000     |
+----------------------------------
+reward_per_timestep -1.5
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 40.1     |
+|    ep_rew_mean      | -93      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 161      |
+|    fps              | 11772    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 6000     |
+----------------------------------
+reward_per_timestep -1.8
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 41.7     |
+|    ep_rew_mean      | -91      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 182      |
+|    fps              | 11875    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 7000     |
+----------------------------------
+reward_per_timestep -2.5
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 41       |
+|    ep_rew_mean      | -90      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 210      |
+|    fps              | 11970    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 8000     |
+----------------------------------
+reward_per_timestep -2.3
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 43.7     |
+|    ep_rew_mean      | -88      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 235      |
+|    fps              | 12045    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 9000     |
+----------------------------------
+reward_per_timestep -2.8
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 38.6     |
+|    ep_rew_mean      | -93      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 263      |
+|    fps              | 12051    |
+|    time_elapsed     | 0        |
+|    total_timesteps  | 10000    |
+----------------------------------
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/core.py:317: DeprecationWarning: [33mWARN: Initializing wrapper in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/wrappers/step_api_compatibility.py:39: DeprecationWarning: [33mWARN: Initializing environment in old step API which returns one bool instead of two. It is recommended to set `new_step_api=True` to use new step API. This will be the default behaviour in future.
+  deprecation(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:174: UserWarning: [33mWARN: Future gym versions will require that `Env.reset` can be passed a `seed` instead of using `Env.seed` for resetting the environment random number generator.
+  logger.warn(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:190: UserWarning: [33mWARN: Future gym versions will require that `Env.reset` can be passed `return_info` to return information from the environment resetting.
+  logger.warn(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: Future gym versions will require that `Env.reset` can be passed `options` to allow the environment initialisation to be passed additional information.
+  logger.warn(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/wandb/sdk/lib/import_hooks.py:243: DeprecationWarning: Deprecated since Python 3.4. Use importlib.util.find_spec() instead.
+  loader = importlib.find_loader(fullname, path)
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:227: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. 
+  logger.deprecation(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be uint8, actual type: int64
+  logger.warn(
+/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+reward_per_timestep 0.0
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 44.4     |
+|    ep_rew_mean      | -85      |
+|    exploration_rate | 0.02     |
+| time/               |          |
+|    episodes         | 273      |
+|    fps              | 6013     |
+|    time_elapsed     | 1        |
+|    total_timesteps  | 11000    |
+| train/              |          |
+|    learning_rate    | 0.001    |
+|    loss             | 1.56     |
+|    n_updates        | 249      |
+----------------------------------
+Traceback (most recent call last):
+  File "random_trainer2.py", line 82, in <module>
+    run()
+  File "random_trainer2.py", line 71, in run
+    model.learn(total_timesteps = int(config.timesteps), log_interval = 1000,
+  File "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/stable_baselines3/stable_baselines3/dqn/dqn.py", line 275, in learn
+    return super().learn(
+  File "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/stable_baselines3/stable_baselines3/common/off_policy_algorithm.py", line 372, in learn
+    self.train(batch_size=self.batch_size, gradient_steps=gradient_steps)
+  File "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/stable_baselines3/stable_baselines3/dqn/dqn.py", line 208, in train
+    current_q_values = self.q_net(replay_data.observations)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/stable_baselines3/stable_baselines3/dqn/policies.py", line 79, in forward
+    return self.q_net(self.extract_features(obs))
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/sagar/anaconda3/envs/rbf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/media/sagar/73f6012e-728a-4e72-b99f-136fd5461f32/media/sagar/inria/code/stable_baselines3/stable_baselines3/common/torch_layers.py", line 638, in forward
+    distances = (x - c).pow(2).sum(-1).pow(0.5) / torch.exp(self.log_sigmas).unsqueeze(0)
+KeyboardInterrupt
